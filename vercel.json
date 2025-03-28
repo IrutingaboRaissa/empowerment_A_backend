@@ -11,15 +11,6 @@
       "src": "/(.*)",
       "dest": "dist/index.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "DATABASE_URL": "@DATABASE_URL",
-    "JWT_SECRET": "@JWT_SECRET",
-    "REFRESH_TOKEN_SECRET": "@REFRESH_TOKEN_SECRET",
-    "FRONTEND_URL": "@FRONTEND_URL",
-    "ALLOWED_ORIGINS": "@ALLOWED_ORIGINS",
-    "RATE_LIMIT_WINDOW_MS": "@RATE_LIMIT_WINDOW_MS",
-    "RATE_LIMIT_MAX_REQUESTS": "@RATE_LIMIT_MAX_REQUESTS"
-  }
+  ]
+
 } 
