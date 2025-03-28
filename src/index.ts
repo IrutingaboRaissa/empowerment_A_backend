@@ -10,6 +10,7 @@ import { likeRouter } from './routes/like.routes';
 import { errorHandler } from './middleware/error.middleware';
 import rateLimit from 'express-rate-limit';
 import { config } from './config';
+import ServerlessHttp from 'serverless-http';
 
 // Load environment variables
 console.log('Loading environment variables...');
@@ -72,7 +73,7 @@ const start = async () => {
     // Start server
     const port = config.server.port;
     app.listen(port, () => {
-      console.log(`Server is running on port ${port}`);
+      console.log(`Server is in index running on port ${port}`);
     });
 
     // Handle shutdown gracefully
@@ -101,5 +102,5 @@ const start = async () => {
 
 start();
 console.log("just checking")
-
-export { app }; 
+module.exports = ServerlessHttp(app)
+// export { app }; 

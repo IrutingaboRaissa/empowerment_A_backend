@@ -14,12 +14,12 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "DATABASE_URL": "@database_url",
-    "JWT_SECRET": "@jwt_secret",
-    "REFRESH_TOKEN_SECRET": "@refresh_token_secret",
-    "FRONTEND_URL": "@frontend_url",
-    "ALLOWED_ORIGINS": "@allowed_origins",
-    "RATE_LIMIT_WINDOW_MS": "@rate_limit_window_ms",
-    "RATE_LIMIT_MAX_REQUESTS": "@rate_limit_max_requests"
+    "DATABASE_URL": "@DATABASE_URL",
+    "JWT_SECRET": "@JWT_SECRET",
+    "REFRESH_TOKEN_SECRET": "@REFRESH_TOKEN_SECRET",
+    "FRONTEND_URL": "@FRONTEND_URL",
+    "ALLOWED_ORIGINS": "@ALLOWED_ORIGINS",
+    "RATE_LIMIT_WINDOW_MS": "@RATE_LIMIT_WINDOW_MS",
+    "RATE_LIMIT_MAX_REQUESTS": "@RATE_LIMIT_MAX_REQUESTS"
   }
 } 
