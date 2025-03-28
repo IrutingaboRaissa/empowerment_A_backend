@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "DATABASE_URL": "@database_url",
+    "JWT_SECRET": "@jwt_secret",
+    "REFRESH_TOKEN_SECRET": "@refresh_token_secret",
+    "FRONTEND_URL": "@frontend_url",
+    "ALLOWED_ORIGINS": "@allowed_origins",
+    "RATE_LIMIT_WINDOW_MS": "@rate_limit_window_ms",
+    "RATE_LIMIT_MAX_REQUESTS": "@rate_limit_max_requests"
+  }
+} 
