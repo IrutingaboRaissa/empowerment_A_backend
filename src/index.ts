@@ -100,5 +100,6 @@ const start = async () => {
 };
 
 start();
+console.log("just checking")
 
 export { app }; 
