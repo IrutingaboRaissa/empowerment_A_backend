@@ -11,6 +11,12 @@
       "src": "/(.*)",
       "dest": "dist/index.js"
     }
-  ]
+  ],
+  "functions": {
+    "dist/index.js": {
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  }
 
 } 
